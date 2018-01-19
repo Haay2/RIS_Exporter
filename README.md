@@ -40,14 +40,16 @@
     <li>
         <a href="http://www.who.int/ictrp/en/">WHO ICTRP</a>
     </li>
+    <li> 
+        <a href="http://www.eldis.org/">ELDIS</a>
+    </li>
 </ul>
 <p>
     I am currently developing code for
 </p>
 <ul>
     <li>
-        <a href="http://www.eldis.org/">ELDIS</a>
-        and <a href="http://www.bridge.ids.ac.uk/">BRIDGE </a>
+        <a href="http://www.bridge.ids.ac.uk/">BRIDGE </a>
     </li>
     <li>
         <a href="https://www.povertyactionlab.org/evaluations">JPAL</a>
