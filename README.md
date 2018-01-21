@@ -75,7 +75,7 @@
     ideally post it here)
 </p>
 <p>
-    <strong>Legal Stuff </strong>
+    <strong>Legal Matters </strong>
 </p>
 <p>
     I take no responsibility for what you do with my code. Some of the
@@ -84,7 +84,8 @@
     against being read by machines and I tricked the websites into telling me
     their secrets. I do not have the resources to make sure that all scripts
     are fully legal to execute or even make agreements with the database
-    providers (see next point). Please judge yourself.
+    providers (see next point). However, neither does Google (which technically 
+    does very similar things). Please judge yourself.
 </p>
 <p>
     <strong>Professionalism </strong>
