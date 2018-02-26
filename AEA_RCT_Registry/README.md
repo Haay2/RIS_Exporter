@@ -29,7 +29,7 @@
     </a>
 </p>
 <p>
-    4.1.2. Type in ‘pip install beautifulsoup4’
+    4.1.2. Type in ‘pip install beautifulsoup4’. If you receive an error, try 'py.exe -m pip install beautifulsoup4'
 </p>
 <p>
     4.1.3. Hit enter
@@ -44,7 +44,7 @@
 1. It goes to the visible website of the    <a href="https://www.socialscienceregistry.org/">AEA RCT Registry</a>
 </p>
 <p>
-    2. It peforms your search
+    2. It peforms your search (the website does not say which fields are searched, but I suspect all available ones) 
 </p>
 <p>
     3. It reads in the text
