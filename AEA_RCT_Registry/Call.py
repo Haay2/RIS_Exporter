@@ -30,7 +30,6 @@ if hits%10 ==0:
 else:
     numpage = hits/10 - (hits%10)/10 + 1
 numpage = int(numpage)
-#print(numpage)
 
 print('STATUS: '+str(numpage)+' index pages found')
 # making a list of index sites
@@ -84,9 +83,7 @@ for suppy in DocSoups:
     FieldLabLi = suppy.find_all('div', class_='field-label')
     for arg in FieldLabLi:
         FieldLabs.append(arg.getText())
-    FieldLi = suppy.find_all('div', class_='field')
-    for arg in FieldLi:
-        Fields.append(arg.getText())
+        Fields.append(arg.find_next().getText())
     bla = 0
     again = 0
     while bla <= len(Fields)-1:
@@ -110,7 +107,7 @@ for suppy in DocSoups:
     PubDate = PubDate[-4:]
     ID = re.findall('[1-9]*', ID)
     ID = ID[-2]
-    print(title, author, abstract, publisher, PubDate, ID)
+    #print(title, author, abstract, publisher, PubDate, ID)
     if title != '':
         RIS = RIS + '\n\rTY  - DBASE\n\rA1  - '+author+'\n\rAB  - '+abstract+'\n\rDB  - APA RCT Registry\n\rLA  - English\n\rPB  - '+publisher+'\n\rPY  - '+PubDate+'\n\rTI  - '+title+'\n\rUR  - https://www.socialscienceregistry.org/trials/'+ID+'\n\rER  - '
 
@@ -123,5 +120,3 @@ file.write(RIS)
 file.close()
 
 print('STATUS: End of code. Well done!')
-# tag div class=trial
-# then first tag a
