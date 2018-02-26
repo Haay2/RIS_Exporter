@@ -43,6 +43,8 @@ while num < len(results2):
     RIS = RIS + 'TY  - ABST\n\rAB  - '+ str(abstract)+ authorRIS + '\n\rDB  - Eldis' +'\n\rL1  - '+str(EldisLink) +  '\n\rPB  - '+str(publisher) + '\n\rPY  - '+str(PubDate)+ '\n\rTI  - '+str(title)+LinkRIS+'\n\rER  - \n\r'
 print('Results from the database parsed')
 # Writing the RIS file into memory
+RIS = RIS.encode('ascii', 'replace')
+RIS = RIS.decode('utf-8', 'replace')
 file = open('RIS Formated Eldis Data.ris', 'w')
 file.write(RIS)
 file.close()
