@@ -18,13 +18,13 @@ What you need
   - To install:
     - Open your [command prompt](https://www.lifewire.com/how-to-open-command-prompt-2618089)
     - Type in &#39;pip install beautifulsoup4&#39;
-    - Hit enter
+    - Hit enter (if this does not work, try &#39;py.exe -m pip install beautifulsoup4&#39;)
 
 What these scripts do
 
 - The first script (Call.py):
   - It goes to the [IDS API](https://api.ids.ac.uk/) for Eldis
-  - It downloads the results for a general search
+  - It downloads the results for a general search (all fields are searched. Not case sensitive. See [documentation](http://docs.api.ids.ac.uk/functions/search/))
   - It writes those results into an SQLite database
 - The second script (DBCall.py)
   - It queries the database generated with the first script with a second search
