@@ -11,7 +11,7 @@ What you need
   - To install:
     - Open your [command prompt](https://www.lifewire.com/how-to-open-command-prompt-2618089)
     - Type in &#39;pip install bravado&#39;
-    - Hit enter
+    - Hit enter (if this does not work, try &#39;py.exe -m pip install bravado&#39;)
 
 What this script does
 
