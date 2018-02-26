@@ -52,6 +52,8 @@ for Trial in SData:
     num = num + 1
     print(str(num) + ' trials identified in XML file and read into memory')
 
+RIS = RIS.encode('ascii', 'replace')
+RIS = RIS.decode('utf-8', 'replace')
 file.close()
 file = open('RIS Formated WHO ICTRP Data.ris', 'w')
 file.write(RIS)
