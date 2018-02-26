@@ -15,7 +15,11 @@ for fi in files:
     file.close()
     SData = ET.fromstring(Data)
     x = SData.find
-    title = x('official_title').text
+    try:
+        title = x('official_title').text
+    except:
+        try: title = x('brief_title').text
+        except: title = 'No Data'
     try:
         link = x('required_header')
         link = link.find('url').text
@@ -43,6 +47,8 @@ for fi in files:
     num = num+1
     print(str(num) + ' trials identified in XML files and read into memory')
 
+RIS = RIS.encode('ascii', 'replace')
+RIS = RIS.decode('utf-8', 'replace')
 file = open('RIS Formatted clinicaltrials-gov Data.ris', 'w')
 file.write(RIS)
 file.close()
